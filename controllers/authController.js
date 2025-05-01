@@ -1,5 +1,5 @@
 const jwt = require('jsonwebtoken');
-const User = require('../research-api/models/user');
+const User = require('../models/user'); 
 
 const generateToken = (user) => {
 return jwt.sign({ id: user._id }, process.env.JWT_SECRET, {
